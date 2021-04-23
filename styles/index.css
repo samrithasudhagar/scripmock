@@ -1,0 +1,23 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+.btn-blue {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+}
+.slider-thumb::-webkit-slider-thumb {
+  @apply w-8 h-8 bg-white rounded-full shadow-sm appearance-none cursor-pointer;
+}
+.slider-thumb::-webkit-slider-thumb::after {
+  @apply bg-blue-700;
+}
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
